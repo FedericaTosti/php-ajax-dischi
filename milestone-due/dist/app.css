@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1E2D3B;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background: #2e3a46;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header img {
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.cds-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto 0;
+  flex-wrap: wrap;
+  /* padding: 100px 0; */
+  width: 1070px;
+  height: 100%;
+  /* generato se la chiamata ajax da errore */
+}
+
+.cds-container .cd {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 200px;
+  padding: 20px;
+  margin: 10px 20px;
+  height: 360px;
+  background: #2e3a46;
+  text-align: center;
+}
+
+.cds-container .cd img {
+  max-width: 100%;
+}
+
+.cds-container .cd h3 {
+  margin: 20px 0;
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.cds-container .cd .author {
+  color: #77787a;
+  font-size: 20px;
+}
+
+.cds-container .cd .year {
+  color: #77787a;
+}
+
+.cds-container .cd .genre {
+  color: #77787a;
+}
+
+.cds-container p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+

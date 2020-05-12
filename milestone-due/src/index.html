@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Php-ajax-handlebars</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+
+  <!-- Stampare a schermo una decina di dischi musicali (vedi screenshot).
+  Utilizzare:                                        Html, Sass, JS, jQuery, handlebars, PHP
+  Prima Milestone:               Stampiamo i dischi solo con l’utilizzo di PHP, che stampa direttamente i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi.
+  Seconda Milestone:             Attraverso l’utilizzo di AJAX: al caricamento della pagina ajax chiederà attraverso una chiamata i dischi a php e li stamperà attraverso handlebars.
+  Bonus:                            Attraverso un’altra chiamata ajax, filtrare gli album per artista -->
+
+  <body>
+    <header>
+      <div class="container-img">
+        <img src="img/logo.png" alt="logo">
+      </div>
+    </header>
+
+    <div class="cds-container">
+
+    </div>
+
+    <!-- template handlebars js -->
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="cd">
+        <img src="{{poster}}" alt="cover">
+        <h3>{{title}}</h3>
+        <span class="author">{{author}}</span>
+        <span class="year">{{year}}</span>
+        <span class="genre">{{genre}}</span>
+      </div>
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script src="app.js" charset="utf-8"></script>
+
+  </body>
+</html>

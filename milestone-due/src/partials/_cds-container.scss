@@ -1,0 +1,55 @@
+.cds-container {
+  @include centerJustifyAlign;
+  margin: 100px auto 0;
+  flex-wrap: wrap;
+  /* padding: 100px 0; */
+  width: 1070px;
+  height: 100%;
+
+
+  .cd {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 200px;
+    padding: 20px;
+    margin: 10px 20px;
+    height: 360px;
+    background: $backgroundColorHeader;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+    }
+
+    h3 {
+      margin: 20px 0;
+      color: $textColorPrimary;
+      font-size: $fontSize20;
+      text-transform: uppercase;
+    }
+
+    .author {
+      color : $textColorSecondary;
+      font-size: $fontSize20;
+    }
+
+    .year {
+      color : $textColorSecondary;
+    }
+
+    .genre {
+      color : $textColorSecondary;
+    }
+  }
+
+
+  /* generato se la chiamata ajax da errore */
+  p {
+    color: $textColorPrimary;
+    font-size: $fontSize20;
+    font-weight: bold;
+    margin-top: 60px;
+  }
+}

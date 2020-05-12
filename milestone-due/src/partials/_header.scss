@@ -1,0 +1,16 @@
+header {
+  width: 100%;
+  height: 70px;
+  background: $backgroundColorHeader;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  img {
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+}
